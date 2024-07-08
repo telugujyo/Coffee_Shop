@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles/order.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/cart.css">
+
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+  <title>Cart</title>
+  
+
+</head>
+
+<body>
+  <div id="navbar">
+
+    <div class="logo">
+      <div class="logo1"> <img src="./images/Refresh00-removebg-preview.png" alt="" width="90px" height="90px">
+      </div>
+      <div class="logo2">
+        <p> REFRESHO</p>
+      </div>
+    </div>
+    <div class="navitems">
+      <div class="item"><a href="index.html">HOME</a></div>
+
+      <div class="item"><a id="home" href="order.html">MENU</a></div>
+      <div class="item"><a href="#ABOUT">ABOUT</a></div>
+      <div class="item"><a href="#CONTACT">CONTACT</a></div>
+    </div>
+    <div class="icons">
+      <input type="text" id="searchinput" placeholder="coffee...">
+      <button id="searchbutton"><img src="images/search-2903.png" alt="" width="28px" class="i"></button>
+
+      <!-- <a href=""><img id="notify" src="images/shopping-cart_628543.png" alt="" width="30px" class="i"></a> -->
+<!--cart notification-->
+      <a href="#" class="notification">
+        <span><img src="images/shopping-cart_628543.png" alt="" width="30px"></span>
+        <span class="badge">0</span>
+      </a>
+    
+      <img src="images/profile.png" alt="" width="30px"  style="margin-bottom: 7.9%;">
+
+    </div>
+  </div>
+
+
+
+  <!--cart items-->
+  <!--two-->
+
+  <ol id="two" class="hidden">
+
+
+    <p id="cart"> #Cart</p>
+
+    <h1>search for your selected item</h1>
+    <h3 id="emptyCartImage">your cart is empty fill it with the coffeee's
+      <br><br> <img src="images/empty_cart-removebg-preview.png" alt="Empty Cart" width="300px">
+
+    </h3>
+
+  </ol>
+
+  <button id="checkout">check out</button>
+
+
+
+ 
+
+</body>
+<script type="module" src="script/script.js"></script>
+<script type="module" src="script/cart.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script>
+  let red = document.querySelectorAll('.badge')
+  console.log(red)
+</script>
+
+</html>

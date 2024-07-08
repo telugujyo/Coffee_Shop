@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="website icon" type="png" href="./images/Refresh00-removebg-preview.png wo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>REFRESHOO</title>
+    <style>
+        .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 999; /* Ensure the overlay is above other content */
+    display: none; /* Initially hidden */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+}
+@media screen and (max-width: 768px) {
+            /* Navbar adjustments */
+            #navbar {
+                flex-direction: column;
+            }
+
+            /* MENU section adjustments */
+            #MENU {
+                background-color: red;
+
+            }
+
+            .parentm {
+                margin-right: 300%;
+                background-color: aliceblue;
+            }
+
+            .childm {
+                margin-right:00%;
+                background-color: blueviolet;
+            }
+
+            /* CONTACT section adjustments */
+            #CONTACT {
+                background-color: green;
+                margin-left: 40%;
+           
+            }
+            #HOME{
+                margin-top: 20%;
+            }
+            #footer{
+                width: 143%;
+            }
+        }
+     
+
+    </style>
+</head>
+
+<body>
+
+    
+    <div id="navbar">
+
+        <div class="logo">
+            <div class="logo1"> <img src="./images/Refresh00-removebg-preview.png" alt="" width="90px" height="90px">
+            </div>
+            <div class="logo2">
+                <p> REFRESHO</p>
+            </div>
+        </div>
+        <div class="navitems">
+            <div class="item"><a href="#HOME">HOME</a></div>
+
+            <div class="item"><a id="home" href="#MENU">MENU</a></div>
+            <div class="item"><a href="#ABOUT">ABOUT</a></div>
+            <div class="item"><a href="#CONTACT">CONTACT</a></div>
+        </div>
+        <div class="icons">
+            <a href="cart.html"><img src="images/search-2903.png" alt="" width="30px" id="id"></a>
+            <a href="order.html"><img src="images/shopping-cart_628543.png" alt="" width="30px"></a>
+            <img src="images/profile.png" alt="" width="30px" id="clickme">
+
+        </div>
+    </div>
+    <section id="HOME">
+        <div class="parent" >
+            <div class="child">
+                <P id="p1">REFRESHH </P>
+                <p id="p2">WITH OUR REFRESHOO COOLDRINKS...</p>
+            </div>
+            <!-- <div class="child childd"><img src="./images/martini.png" alt="">
+                <br>
+                <h6 id="small">DRINK ------ENJOY------REPEAT</h6>
+            </div> -->
+        </div>
+    </section>
+    <section id="MENU">
+        <div class="parentm">
+            <div class="childm1 childm">
+                <p> #MENU</p>
+                <div class="list">
+                    <div class="listc list1">
+                        <div class="jyo">
+                            <div class="jyoc jyo1">
+                                <p>Coffee</p>
+                                <p>Ice Coffee</p>
+                                <p>Mojito</p>
+                                <p>Tea</p>
+                                <p>Capachino</p>
+                                <p>Espresso</p>
+
+                            </div>
+                            <div class="jyoc jyo1">
+                                <p>-- ₹120.0</p>
+                                <p>-- ₹180.95</p>
+                                <p>-- ₹150.05</p>
+                                <p>-- ₹100.00</p>
+                                <p>-- ₹209.52</p>
+                                <p>-- ₹171.43</p>
+
+                            </div>
+
+                        </div>
+                        <a href="order.html"  style=" background-color:black;" onclick="sound1.play()"><button id="order" >ORDER</button></a>
+
+                    </div>
+                    <div class="listc llist2">
+                        <div class="jyo">
+                            <div class="jyoc jyo1">
+                                <p>Americano</p>
+                                <p>Latte</p>
+                                <p>Flat White</p>
+                                <p>Macchiato</p>
+                                <p>Cartado</p>
+                                <p>Mocha</p>
+                            </div>
+                            <div class="jyoc jyo1">
+                                <p>-- ₹190.48</p>
+                                <p>-- ₹228.57</p>
+                                <p>-- ₹209.52</p>
+                                <p>-- ₹200.52</p>
+                                <p>-- ₹200.00</p>
+                                <p>-- ₹257.14</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ABOUT">
+        <div id="circlep">
+            <div class="circle">
+                <img src="images/lion.jpg" alt="" style="border-radius: 50%;" width="300px" height="300px">
+                <p>Founder</p>
+            </div>
+            <div class="circle">
+                <img src="images/lion.jpg" alt="" style="border-radius: 50%;" width="300px" height="300px">
+                <p>CoFounder</p>
+            </div>
+
+        </div>
+
+        <div class="parap">
+            <div class="para">
+                <span>
+                    <p id="a">#ABOUT</p>
+                </span>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti iste nam nobis omnis obcaecati
+                    accusamus explicabo suscipit voluptatum doloribus sequi?Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Natus excepturi harum ab minima ipsa, nostrum explicabo. Quaerat velit autem cum!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="CONTACT">
+        <div class="spel">
+            <div class="1 c">#</div>
+            <div class="2 c">C</div>
+            <div class="3 c">O</div>
+            <div class="1 c">N</div>
+            <div class="1 c">T</div>
+            <div class="1 c">A</div>
+            <div class="1 c">C</div>
+            <div class="1 c">T</div>
+            <div class="1 c">:D</div>
+        </div>
+
+        <fieldset>
+
+            <!-- Name -->
+            <div class="form">
+
+                <div class="label">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Your name please">
+                </div>
+
+                <!-- Email -->
+                <div class="label">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Your Mail ID">
+                </div>
+
+                <!-- Phone Number -->
+                <div class="label">
+                    <label for="tel">Phone no:</label>
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Your Phone No..">
+                </div>
+                <!-- Your msg -->
+                <div class="label">
+                    <label for="msg">Enter Your message:</label>
+                </div>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Your msg goes here....:)"></textarea>
+                <div class="button">
+                    <input type="submit" id="button">
+                </div>
+
+
+
+            </div>
+        </fieldset>
+
+
+    </section>
+    <section id="footer">
+        <div class="footer">
+            Copyright &copy;All Rights are Reserved
+        </div>
+    </section>
+</body>
+<script>
+    var sound1 = new Audio();
+    sound1.src = "mouse-click-153941.mp3"; // Adjust the file extension according to your sound file
+</script>
+<script src="script/script.js"></script>
+<!-- <script src="script/search.js"></script> -->
+
+</html>

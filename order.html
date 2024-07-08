@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/order.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <title>order</title>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    #two {
+      /* border:2px solid black; */
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      height: 100%;
+      width: 50%;
+    }
+
+    button {
+      font-size: 30px;
+      padding: 10px;
+      border: 2px;
+    }
+
+    .wholeprice {
+      font-family: 'Great Vibes', cursive;
+
+      /* border: 3px solid black; */
+      padding: 30px;
+      height: 300px;
+      width: 300px;
+      font-size: 20px;
+    }
+
+    #toaldivo {
+      font-family: 'Great Vibes', cursive;
+
+      /* border: 3px solid black; */
+      padding: 30px;
+      height: 300px;
+      width: 300px;
+      font-size: 20px;
+    }
+
+    .whole {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px
+    }
+
+    #checkouto {
+      display: none;
+    }
+
+    @media screen and (max-width:768px) {
+      .menu-card {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="navbar">
+
+    <div class="logo">
+      <div class="logo1"> <img src="./images/Refresh00-removebg-preview.png" alt="" width="90px" height="90px">
+      </div>
+      <div class="logo2">
+        <p> REFRESHO</p>
+      </div>
+    </div>
+    <div class="navitems">
+      <div class="item"><a href="index.html">HOME</a></div>
+
+      <div class="item"><a href="" id="o">MENU</a></div>
+      <div class="item"><a href="#ABOUT">ABOUT</a></div>
+      <div class="item"><a href="#CONTACT">CONTACT</a></div>
+      <!-- <div class="item"><a href="login.html">LOG IN</a></div> -->
+    </div>
+    <div class="icons">
+      <a href="cart.html" id="searchbutton"><img src="images/search-2903.png" alt="" width="30px"></a>
+
+      <!--cart notification-->
+      <a href="#" class="notification">
+        <span><img src="images/shopping-cart_628543.png" alt="" width="30px" id="t"></span>
+        <span class="badge">0</span>
+      </a>
+      <!-- <img src="images/shopping-cart_628543.png" alt="" width="30px" > -->
+
+      <img src="images/profile.png" alt="" width="30px" id="clickme">
+
+    </div>
+  </div>
+  <!--menu-content-->
+  <p id="r1"> #REFRESHOO MENU</p>
+  <!-- <button id="o" >one</button> -->
+  <!-- <button id="t"  >two</button> -->
+  <div class="menu-card" id="one"> <!--one-->
+
+    <div class="card1">
+      <!-- Example of an add button with data attributes -->
+      <div class="card">
+        <img src="images/coffee_251078.png" alt="" width="50px" height="50px">
+        <p class="p">Coffee</p>
+        <p class="p1">₹120.00</p>
+        <div class="add" data-name="Coffee" data-price="120.00" data-img="images/coffee_251078.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Ice Coffee -->
+      <div class="card">
+        <img src="images/iced coffee.png" alt="" width="50px" height="50px">
+        <p class="p">Ice Coffee</p>
+        <p class="p1">₹180.95</p>
+        <div class="add" data-name="Ice Coffee" data-price="180.95" data-img="images/iced coffee.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Mojito -->
+      <div class="card">
+        <img src="images/mojito.png" alt="" width="50px" height="50px">
+        <p class="p">Mojito</p>
+        <p class="p1">₹150.05</p>
+        <div class="add" data-name="Mojito" data-price="150.05" data-img="images/mojito.png" onclick="sound1.play()">Add
+        </div>
+      </div>
+
+      <!-- Tea -->
+      <div class="card">
+        <img src="images/lemon-tea.png" alt="" width="50px" height="50px">
+        <p class="p">Tea</p>
+        <p class="p1">₹100.00</p>
+        <div class="add" data-name="Tea" data-price="100.00" data-img="images/lemon-tea.png" onclick="sound1.play()">Add
+        </div>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="card">
+        <img src="images/cappuccino.png" alt="" width="50px" height="50px">
+        <p class="p">Cappuccino</p>
+        <p class="p1">₹209.52</p>
+        <div class="add" data-name="Cappuccino" data-price="209.52" data-img="images/cappuccino.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Espresso -->
+      <div class="card">
+        <img src="images/espresso.png" alt="" width="50px" height="50px">
+        <p class="p">Espresso</p>
+        <p class="p1">₹171.43</p>
+        <div class="add" data-name="Espresso" data-price="171.43" data-img="images/espresso.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+    </div>
+    <div class="card2">
+      <!-- Americano -->
+      <div class="card">
+        <img src="images/americano.png" alt="" width="50px" height="50px">
+        <p class="p">Americano</p>
+        <p class="p1">₹190.48</p>
+        <div class="add" data-name="Americano" data-price="190.48" data-img="images/americano.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Latte -->
+      <div class="card">
+        <img src="images/coffee-latte.png" alt="" width="50px" height="50px">
+        <p class="p">Latte</p>
+        <p class="p1">₹228.57</p>
+        <div class="add" data-name="Latte" data-price="228.57" data-img="images/coffee-latte.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Flat White -->
+      <div class="card">
+        <img src="images/flatwhite.png" alt="" width="50px" height="50px">
+        <p class="p">Flat White</p>
+        <p class="p1">₹209.52</p>
+        <div class="add" data-name="Flat White" data-price="209.52" data-img="images/flatwhite.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Macchiato -->
+      <div class="card">
+        <img src="images/macchiato.png" alt="" width="50px" height="50px">
+        <p class="p">Macchiato</p>
+        <p class="p1">₹200.52</p>
+        <div class="add" data-name="Macchiato" data-price="200.52" data-img="images/macchiato.png"
+          onclick="sound1.play()">Add</div>
+      </div>
+
+      <!-- Cartado -->
+      <div class="card">
+        <img src="images/cartado.png" alt="" width="50px" height="50px">
+        <p class="p">Cartado</p>
+        <p class="p1">₹200.00</p>
+        <div class="add" data-name="Cartado" data-price="200.00" data-img="images/cartado.png" onclick="sound1.play()">
+          Add</div>
+      </div>
+
+      <!-- Mocha -->
+      <div class="card">
+        <img src="images/mocha.png" alt="" width="50px" height="50px">
+        <p class="p">Mocha</p>
+        <p class="p1">₹257.14</p>
+        <div class="add" data-name="Mocha" data-price="257.14" data-img="images/mocha.png" onclick="sound1.play()">Add
+        </div>
+      </div>
+    </div>
+  </div><!-- one end-->
+  <div class="whole">
+    <div id="two"><!--two-->
+
+    </div><!--two end-->
+    <div class="wholeprice">
+
+    </div>
+  </div>
+  <button id="checkouto" onclick="sound3.play()">checkout</button>
+
+
+
+
+</body>
+<script src="script/script.js"></script>
+<script src="script/cart.js"></script>
+<script src="script/order.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<script>
+
+
+  let addButtons = document.querySelectorAll('.add');
+
+
+
+  // Add event listener to each add button
+  addButtons.forEach(button => {
+    button.addEventListener('click', function (event) {
+      // Prevent the default behavior of the anchor element
+      event.preventDefault();
+      c++;
+      b.innerText = c;
+      // Get the item details from the button's attributes or data attributes
+      let name = button.getAttribute('data-name');
+      let price = button.getAttribute('data-price');
+      let img = button.getAttribute('data-img');
+
+      // Call the item function with item details
+      item(name, price, img);
+    });
+  });
+
+  let c;
+  let b;
+
+
+  b = document.querySelector('.notification .badge');
+  c = parseInt(b.innerText);
+
+
+
+  var sound1 = new Audio();
+  sound1.src = "mouse-click-153941.mp3"; // Adjust the file extension according to your sound file
+
+  var sound2 = new Audio();
+  sound2.src = "delete.mp3";
+
+
+  var sound3 = new Audio();
+  sound3.src = "coin-drop-39914.mp3";
+</script>
+
+
+</html>
